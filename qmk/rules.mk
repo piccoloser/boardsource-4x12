@@ -1,3 +1,4 @@
 REPEAT_KEY_ENABLE = yes
 CAPS_WORD_ENABLE = yes
 SWAP_HANDS_ENABLE = yes
+SRC += handswap.c
