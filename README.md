@@ -1,7 +1,7 @@
 # Greigh's 4x12 Ortho Layout
 Hello, and welcome to this extremely compact and arguably cursed keyboard layout for the Boardsource 4x12 and similar 40% keyboards that support QMK! This README will include a short description of how you're supposed to use this thing as well as explaining the mindset behind each decision I made in the development process.
 
-# Building & Flashing
+## Building & Flashing
 The QMK documentation already has a [super helpful guide](https://docs.qmk.fm/newbs_building_firmware#build-your-firmware) to building and flashing firmware! The only things to be aware of with this layout in particular are the `qmk/rules.mk` and `handswap.c` files.
 
 Just by having these in the same directory as your generated `keymap.c`, when you go to compile your firmware (I recommend using the [QMK CLI](https://docs.qmk.fm/cli)), everything should compile without issue. `handswap.c` is just a matrix that describes where the keyboard's keys will be after the layout has been mirrored. By adding the following to `rules.mk`:
@@ -57,7 +57,7 @@ This layer is almost completely transparent, but the bottom row has been modifie
 
 This is pretty much a normal QWERTY keyboard except the bottom row and modifier keys are exactly the same as the base layer, with `Enter` under the left thumb, `Space` under the right, layer toggles under the ring and fingers and thumbs, etcetera. It's the base layer's more vanilla sibling.
 
-# Function Layer (3)
+## Function Layer (3)
 ![Function Layer](/images/layer3.png)
 
 This layer is where you'll find:
@@ -71,7 +71,7 @@ This layer is where you'll find:
 - Layer-switching keys to navigate between the base layer, third layer, and second layer (in that order; `Base -> QWERTY -> Hand-Swap`)
 - Some conveniently placed modifiers if you need them, mostly on the right hand because the function keys take up most of the left side
 
-# Navigation Layer (4)
+## Navigation Layer (4)
 ![Navigation Layer](/images/layer4.png)
 
 I refer to this as the **Navigation Layer,** but it's really more of an essential "you will use this constantly" layer. On the left side, it's got `NumLock`, media controls for volume and play/pause toggles, page navigation, quick `Ctrl_L/R` and `Repeat` keys for when you're navigating through text, and on the right side, it's got a numpad.
