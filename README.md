@@ -80,6 +80,8 @@ It's important to note the thumb keys here. They're central to Windows, but thes
 1. Holding the left thumb and pressing the right will activate **Snipping Tool**
 2. Holding the right thumb and pressing the left will lock your computer.
 
+As for why there is a numpad but no number row, and why I put the symbols on their own on the previous row, this is a quirk of how I personally think of typing numbers versus symbols. I think of symbols (`!`, `@`, `#`, and so on...) linearly, left to right. On the other hand, when I type numbers, I think of them in a numpad configuration.
+
 ---
 
 # Common Issues
