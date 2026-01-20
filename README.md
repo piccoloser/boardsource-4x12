@@ -8,7 +8,7 @@ This layout also supports rudimentary one-handed typing, which I'm still adjusti
 ## Building & Flashing
 The QMK documentation already has a [super helpful guide](https://docs.qmk.fm/newbs_building_firmware#build-your-firmware) to building and flashing firmware! The only things to be aware of with this layout in particular are the `qmk/rules.mk` and `qmk/handswap.c` files.
 
-Just by having these files in the same directory as your generated `keymap.c`, when you go to compile your firmware (I recommend using the [QMK CLI](https://docs.qmk.fm/cli)), everything should compile without issue. `handswap.c` is just a matrix that describes where the keyboard's keys will be after the layout has been mirrored. By adding the following to `rules.mk`:
+Just by having these files in the same directory as your generated `keymap.c` when you go to compile your firmware (I recommend using the [QMK CLI](https://docs.qmk.fm/cli)), everything should compile without issue. `handswap.c` is just a matrix that describes where the keyboard's keys will be after the layout has been mirrored. By adding the following to `rules.mk`:
 
 ```makefile
 SWAP_HANDS_ENABLE = yes
