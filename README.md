@@ -2,9 +2,9 @@
 Hello, and welcome to this extremely compact and arguably cursed keyboard layout for the Boardsource 4x12 and similar 40% keyboards that support QMK! This README will include a short description of how you're supposed to use this thing as well as explaining the mindset behind each decision I made in the development process.
 
 ## Building & Flashing
-The QMK documentation already has a [super helpful guide](https://docs.qmk.fm/newbs_building_firmware#build-your-firmware) to building and flashing firmware! The only things to be aware of with this layout in particular are the `qmk/rules.mk` and `handswap.c` files.
+The QMK documentation already has a [super helpful guide](https://docs.qmk.fm/newbs_building_firmware#build-your-firmware) to building and flashing firmware! The only things to be aware of with this layout in particular are the `qmk/rules.mk` and `qmk/handswap.c` files.
 
-Just by having these in the same directory as your generated `keymap.c`, when you go to compile your firmware (I recommend using the [QMK CLI](https://docs.qmk.fm/cli)), everything should compile without issue. `handswap.c` is just a matrix that describes where the keyboard's keys will be after the layout has been mirrored. By adding the following to `rules.mk`:
+Just by having these files in the same directory as your generated `keymap.c`, when you go to compile your firmware (I recommend using the [QMK CLI](https://docs.qmk.fm/cli)), everything should compile without issue. `handswap.c` is just a matrix that describes where the keyboard's keys will be after the layout has been mirrored. By adding the following to `rules.mk`:
 
 ```makefile
 SWAP_HANDS_ENABLE = yes
