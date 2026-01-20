@@ -1,5 +1,9 @@
 # Greigh's 4x12 Ortho Layout
-Hello, and welcome to this extremely compact and arguably cursed keyboard layout for the Boardsource 4x12 and similar 40% keyboards that support QMK! This README will include a short description of how you're supposed to use this thing as well as explaining the mindset behind each decision I made in the development process.
+Hello, and welcome to this extremely compact and arguably cursed Dvorak-centric keyboard layout for the Boardsource 4x12 and similar 40% keyboards that support QMK! This README will include a short description of how you're supposed to use this thing as well as explaining the mindset behind each decision I made in the development process.
+
+One very important note to be aware of ahead of time is that my layout, like those of many QMK-compatible keyboards, relies **heavily** on layers to reduce finger movement and strain over time. I type for a living, and even after using this layout all day, every day, while doing typing tests [at considerable speeds](https://monkeytype.com/profile/_piccoloser), my hands are rarely ever tired, let alone uncomfortable thanks to the way I've set things up.
+
+This layout also supports rudimentary one-handed typing, which I'm still adjusting to and rarely make use of, but this is the only area where one may experience strain because I'm not a scientist.
 
 ## Building & Flashing
 The QMK documentation already has a [super helpful guide](https://docs.qmk.fm/newbs_building_firmware#build-your-firmware) to building and flashing firmware! The only things to be aware of with this layout in particular are the `qmk/rules.mk` and `qmk/handswap.c` files.
