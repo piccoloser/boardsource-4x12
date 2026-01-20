@@ -57,7 +57,7 @@
       "LCTL(KC_TAB)"
     ],
     [
-      "KC_TRNS",
+      "LT(3,KC_TRNS)",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
@@ -99,7 +99,7 @@
       "KC_TRNS",
       "KC_TRNS",
       "ANY(SH_T(KC_SPC))",
-      "KC_ENT",
+      "LT(4,KC_ENT)",
       "KC_TRNS",
       "TO(0)",
       "KC_TRNS",
