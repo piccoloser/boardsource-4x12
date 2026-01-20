@@ -1,8 +1,17 @@
 # Greigh's 4x12 Ortho Layout
 Hello, and welcome to this extremely compact and arguably cursed keyboard layout for the Boardsource 4x12 and similar 40% keyboards that support QMK! This README will include a short description of how you're supposed to use this thing as well as explaining the mindset behind each decision I made in the development process.
 
-# Flashing Instructions
-(For those who don't know how to do this already. Coming soon!)
+# Building & Flashing
+The QMK documentation already has a [super helpful guide](https://docs.qmk.fm/newbs_building_firmware#build-your-firmware) to building and flashing firmware! The only things to be aware of with this layout in particular are the `qmk/rules.mk` and `handswap.c` files.
+
+Just by having these in the same directory as your generated `keymap.c`, when you go to compile your firmware (I recommend using the [QMK CLI](https://docs.qmk.fm/cli)), everything should compile without issue. `handswap.c` is just a matrix that describes where the keyboard's keys will be after the layout has been mirrored. By adding the following to `rules.mk`:
+
+```makefile
+SWAP_HANDS_ENABLE = yes
+SRC += handswap.c
+```
+
+We tell the compiler to include the contents of `handswap.c` as if it were part of the generated C code (no copy/pasting needed)!
 
 ## Base Layer (0)
 ![Base Layer](/images/layer0.png)
